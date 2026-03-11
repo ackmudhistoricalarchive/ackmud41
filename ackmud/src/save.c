@@ -830,46 +830,38 @@ void fread_char( CHAR_DATA *ch, FILE *fp )
 	    KEY( "Alignment",   ch->alignment,          fread_number( fp ) );
 	    KEY( "Armor",       ch->armor,              fread_number( fp ) );
 	    KEY( "Adeptlevel",  ch->adept_level,		fread_number( fp ) );
-	    if (!IS_NPC(ch))
+	    if ( !IS_NPC(ch) )
 	    {
-	     SKEY( "Alias_Name0", 
-	              ch->pcdata->alias_name[0],	fread_string( fp ) );
-	              
-             SKEY( "Alias_Name1", 
-	              ch->pcdata->alias_name[1],	fread_string( fp ) );
-	   
-	     SKEY( "Alias_Name2", 
-	              ch->pcdata->alias_name[2],	fread_string( fp ) );
-	    
-             SKEY( "Alias_Name3", 
-	              ch->pcdata->alias_name[3],	fread_string( fp ) );
-	    
-             SKEY( "Alias_Name4", 
-	              ch->pcdata->alias_name[4],	fread_string( fp ) );
-	    
-	     SKEY( "Alias_Name5", 
-	              ch->pcdata->alias_name[5],	fread_string( fp ) );
-	    	    
+	       int alias_index;
 
-	     SKEY( "Alias0", 
-	              ch->pcdata->alias[0],	fread_string( fp ) );
-	              
-             SKEY( "Alias1", 
-	              ch->pcdata->alias[1],	fread_string( fp ) );
-	   
-	     SKEY( "Alias2", 
-	              ch->pcdata->alias[2],	fread_string( fp ) );
-	    
-             SKEY( "Alias3", 
-	              ch->pcdata->alias[3],	fread_string( fp ) );
-	    
-             SKEY( "Alias4", 
-	              ch->pcdata->alias[4],	fread_string( fp ) );
-	    
-	     SKEY( "Alias5", 
-	              ch->pcdata->alias[5],	fread_string( fp ) );
+	       if ( sscanf( word, "Alias_Name%d", &alias_index ) == 1 )
+	       {
+		  if ( alias_index >= 0 && alias_index < MAX_ALIASES )
+		  {
+		     if ( ch->pcdata->alias_name[alias_index] != NULL )
+			free_string( ch->pcdata->alias_name[alias_index] );
+		     ch->pcdata->alias_name[alias_index] = fread_string( fp );
+		  }
+		  else
+		     fread_string( fp );
+		  fMatch = TRUE;
+		  break;
+	       }
+
+	       if ( sscanf( word, "Alias%d", &alias_index ) == 1 )
+	       {
+		  if ( alias_index >= 0 && alias_index < MAX_ALIASES )
+		  {
+		     if ( ch->pcdata->alias[alias_index] != NULL )
+			free_string( ch->pcdata->alias[alias_index] );
+		     ch->pcdata->alias[alias_index] = fread_string( fp );
+		  }
+		  else
+		     fread_string( fp );
+		  fMatch = TRUE;
+		  break;
+	       }
 	    }
-
 
 	    if ( !str_cmp( word, "Affect" ) )
 	    {  
