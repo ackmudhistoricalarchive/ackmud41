@@ -4985,7 +4985,7 @@ void do_alias( CHAR_DATA *ch, char *argument )
       
    if ( alias_no < 0 || alias_no > (MAX_ALIASES - 1) )
    {
-      sprintf( buf, "Valid alias numbers are 0 to %d.\n\r", MAX_ALIASES );
+      sprintf( buf, "Valid alias numbers are 0 to %d.\n\r", MAX_ALIASES - 1 );
       send_to_char( buf, ch );
       return;
    }

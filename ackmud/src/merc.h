@@ -110,7 +110,7 @@ typedef int                             long_int;
 #define MAX_CLAN_EQ		     6  /* Number of clan eq items */
 #define MAX_COLOUR		    15  /* eg look, prompt, shout */
 #define MAX_ANSI		    20  /* eg red, black, etc (was 11) */
-#define MAX_ALIASES		     6
+#define MAX_ALIASES		    10
 #define MAX_IGNORES		     3
 #define MAX_RACE                     14
 #define MAX_CLAN                     9  /* number of clans */
