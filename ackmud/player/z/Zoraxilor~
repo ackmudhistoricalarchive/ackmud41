@@ -1,0 +1,1594 @@
+#PLAYER
+Revision     7
+Name         Zoraxilor~
+ShortDescr   ~
+LongDescr    ~
+Description  ~
+Prompt       @@W<@@e%h@@W/@@R%H @@a%m@@W/@@l%M @@R%F @@r%t @@a%p@@W>%c~
+Sex          1
+LoginSex     1
+Class        3
+Race         12
+Level        80
+Sentence     0
+Invis        0
+Incog		 0
+m/c          80 80 80 80 77 
+Remort       37 -1 -1 -1 -1 
+Adeptlevel   -1
+ Trust        0
+Wizbit       0
+Played       464255
+Note         842341513
+Room         7216
+HpManaMove   4381 4381 2131 2131 2561 2561
+Gold         3279153
+Balance      0
+Exp          13490298
+Act          33687048
+AffectedBy   0
+Position     7
+Practice     852
+SavingThrow  -42
+Alignment    -1000
+Hitroll      293
+Damroll      298
+Armor        -2446
+Wimpy        500
+Deaf         541073668
+Generation   8
+Clan         3
+Order        3 1 0 2 4
+Index	   2 1 3 0 4
+Mkills	   2522
+Mkilled	   32
+Pkills	   0
+Pkilled	   0
+Password     Moe..WbEMBnOs~
+Bamfin       ~
+Bamfout      ~
+Roomenter    boars you down from~
+Roomexit     rushes~
+Title        @@d @@mLord @@dof @@eCorruption@@N~
+Immskll     ~
+Whoname      Woff~
+Monitor	   0
+Host         206.155.254.78~
+Failures     0
+LastLogin    Sat Feb  8 19:12:07 1997
+~
+IMC	   1
+HiCol	   a~
+DimCol	   c~
+Alias_Name0 ks~
+Alias0      kill slave~
+Alias_Name1 km~
+Alias1      kill monitor~
+Alias_Name2 sd~
+Alias2      scan~
+Alias_Name3 gp~
+Alias3      gos @@d(@@y\@@Ro@@y/@@d)@@N~
+Alias_Name4 rm~
+Alias4      {@@d(@@y\@@eo@@y/@@d)@@N ~
+Alias_Name5 df~
+Alias5      clan @@d(@@y\@@eo@@y/@@d)@@N~
+Colours
+15
+6
+8
+0
+0
+16
+1
+0
+0
+0
+15
+5
+0
+14
+2
+AttrPerm     23 19 16 21 22
+AttrMod      0 0 0 0 0
+AttrMax      23 19 16 21 22
+Bloodlust    1
+Bloodlustmax   14
+Vamplevel      4
+Vampexp       275
+Vampskillnum  0
+Vampskillmax  6
+Vampbloodline 3
+Vamppracs     6
+Hasexpfix     1
+Questpoints   0
+RecallVnum    2687
+GainMana      907
+GainHp        3207
+GainMove      3011
+RulerRank    0
+Condition    0 23 10
+Pagelen      100
+Pflags       1025
+Skill        82 'acid blast'
+Skill        82 'armor'
+Skill        86 'bark skin'
+Skill        86 'bless'
+Skill        82 'blindness'
+Skill        86 'charm person'
+Skill        86 'create food'
+Skill        86 'cure blindness'
+Skill        86 'cure critical'
+Skill        86 'cure light'
+Skill        86 'cure poison'
+Skill        86 'cure serious'
+Skill        86 'curse'
+Skill        86 'detect hidden'
+Skill        82 'detect invis'
+Skill        99 'detect magic'
+Skill        74 'detection'
+Skill        82 'dispel magic'
+Skill        82 'enchant weapon'
+Skill        86 'faerie fog'
+Skill        74 'fighting trance'
+Skill        86 'flare'
+Skill        82 'fly'
+Skill        82 'giant strength'
+Skill        86 'heal'
+Skill        82 'identify'
+Skill        82 'invis'
+Skill        74 'know weakness'
+Skill        74 'know critical'
+Skill        82 'locate object'
+Skill        82 'mystic armour'
+Skill        82 'pass door'
+Skill        74 'phase'
+Skill        82 'protection'
+Skill        20 'refresh'
+Skill        86 'remove curse'
+Skill        86 'sanctuary'
+Skill        86 'seal room'
+Skill        82 'shield'
+Skill        82 'stone skin'
+Skill        82 'summon'
+Skill        82 'teleport'
+Skill        80 'warcry'
+Skill        82 'beacon'
+Skill        74 'planergy'
+Skill        74 'visit'
+Skill        74 'barrier'
+Skill        74 'static'
+Skill        90 'bash'
+Skill        90 'beserk'
+Skill        78 'climb'
+Skill        90 'dirt'
+Skill        90 'nodisarm'
+Skill        90 'notrip'
+Skill        90 'smash'
+Skill        90 'trip'
+Skill        78 'circle'
+Skill        78 'backstab'
+Skill        90 'disarm'
+Skill        78 'dodge'
+Skill        90 'enhanced damage'
+Skill        78 'find doors'
+Skill        90 'fourth attack'
+Skill        90 'headbutt'
+Skill        78 'hide'
+Skill        78 'hunt'
+Skill        90 'kick'
+Skill        90 'knee'
+Skill        90 'parry'
+Skill        78 'peek'
+Skill        78 'pick lock'
+Skill        90 'punch'
+Skill        90 'rescue'
+Skill        90 'second attack'
+Skill        74 'shadowform'
+Skill        90 'shield block'
+Skill        90 'stake'
+Skill        90 'third attack'
+Skill        74 'emotion control'
+Skill        82 'ethereal travel'
+Skill        82 'fire elemental'
+Skill        82 'rune:fire'
+Skill        82 'rune:shock'
+Skill        82 'mana flare'
+Skill        82 'cage'
+Skill        82 'room dispel'
+Skill        90 'scent'
+Skill        90 'mount'
+End
+
+#OBJECT
+Nest         0
+Name         Ebony Death~
+ShortDescr   @@mEbony Death@@g~
+Description  @@mAn ebony dagger lies here, ready to visit a black death upon the unwilling.@@g
+~
+Vnum         20616
+ExtraFlags   33554964
+WearFlags    24577
+WearLoc      16
+ClassFlags   257
+ItemType     5
+Weight       1
+Level        80
+Timer        0
+Cost         1469
+Values       0 13 34 11
+Affect       -1 -1 100 12 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 -75 17 0
+End
+
+#OBJECT
+Nest         0
+Name         Loving Embrace~
+ShortDescr   @@cLoving Embrace@@N~
+Description  The blissful wrap of love is waiting to be fallen into.
+~
+Vnum         5624
+ExtraFlags   1
+WearFlags    1025
+WearLoc      12
+ClassFlags   272
+ItemType     9
+Weight       1
+Level        80
+Timer        0
+Cost         320
+Values       9 0 0 0
+Affect       -1 -1 -100 17 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 80 13 0
+Affect       -1 -1 80 12 0
+Affect       -1 -1 1 1 0
+Affect       -1 -1 1 3 0
+Affect       -1 -1 1 4 0
+Affect       -1 -1 1 2 0
+Affect       -1 -1 1 5 0
+End
+
+#OBJECT
+Nest         0
+Name         Armplate of the Guardian~
+ShortDescr   @@mArmplate of the Guardian@@g~
+Description  @@mA massive armplate, bearing the symbol of the Ancient Ones, lies here.@@g
+~
+Vnum         20614
+ExtraFlags   532
+WearFlags    257
+WearLoc      10
+ClassFlags   273
+ItemType     9
+Weight       1
+Level        80
+Timer        0
+Cost         0
+Values       8 0 0 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 15 9 0
+Affect       -1 -1 100 13 0
+Affect       -1 -1 -90 17 0
+End
+
+#OBJECT
+Nest         0
+Name         balances ~
+ShortDescr   the balances of @@Wlife@@g and @@kdeath@@g~
+Description  ~
+Vnum         840
+ExtraFlags   132608
+WearFlags    513
+WearLoc      11
+ClassFlags   3592
+ItemType     9
+Weight       9
+Level        80
+Timer        0
+Cost         1170
+Values       10 0 0 0
+Affect       -1 -1 -50 14 0
+Affect       -1 -1 14 19 0
+Affect       -1 -1 12 18 0
+Affect       -1 -1 -120 17 0
+End
+
+#OBJECT
+Nest         0
+Name         t-1 link~
+ShortDescr   @@Wa T-1 Link@@g~
+Description  The fastest link you have ever seen runs along the ground here.
+~
+Vnum         800
+ExtraFlags   1858
+WearFlags    2049
+WearLoc      13
+Objfun       objfun_giggle~
+ClassFlags   136
+ItemType     9
+Weight       20
+Level        80
+Timer        0
+Cost         850
+Values       10 0 0 0
+Affect       -1 -1 100 12 0
+Affect       -1 -1 15 19 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 -100 14 0
+Affect       -1 -1 -20 13 0
+Affect       -1 -1 -1 2 0
+Affect       -1 -1 -50 17 0
+End
+
+#OBJECT
+Nest         0
+Name         black steel breastplate plate~
+ShortDescr   a black steel breastplate~
+Description  A black steel breastplate lies here.
+~
+Vnum         16866
+ExtraFlags   262148
+WearFlags    9
+WearLoc      5
+ClassFlags   3738
+ItemType     9
+Weight       1
+Level        10
+Timer        0
+Cost         6448
+Values       10 0 0 0
+Affect       -1 -1 140 12 0
+Affect       -1 -1 150 13 0
+Affect       -1 -1 -170 17 0
+Affect       -1 -1 17 19 0
+Affect       -1 -1 17 18 0
+End
+
+#OBJECT
+Nest         0
+Name         the sting of the Queen be~
+ShortDescr   @@RThe @@ySting @@Rof the @@yQueen Bee@@N~
+Description  ~
+Vnum         16818
+ExtraFlags   5
+WearFlags    131073
+WearLoc      20
+ClassFlags   16785
+ItemType     11
+Weight       1
+Level        80
+Timer        0
+Cost         320
+Values       16817 0 0 0
+Affect       -1 -1 80 12 0
+Affect       -1 -1 80 13 0
+Affect       -1 -1 16 19 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 1 5 0
+Affect       -1 -1 3 2 0
+End
+
+#OBJECT
+Nest         0
+Name         Banshee Veil~
+ShortDescr   @@mA Veil of the Banshee@@g~
+Description  @@mA Veil of the Banshee seemingly floats on the air here.@@g
+~
+Vnum         20605
+ExtraFlags   262160
+WearFlags    32769
+WearLoc      18
+ClassFlags   3083
+ItemType     9
+Weight       2
+Level        30
+Timer        0
+Cost         3200
+Values       10 0 0 0
+Affect       -1 -1 -180 17 0
+Affect       -1 -1 -15 24 0
+Affect       -1 -1 17 19 0
+Affect       -1 -1 15 18 0
+End
+
+#OBJECT
+Nest         0
+Name         shadow bracers~
+ShortDescr   the Shadow@@k bracers@@g~
+Description  The shadow of some kind of wrist guard can be seen on a nearby wall.
+~
+Vnum         835
+ExtraFlags   1668
+WearFlags    4097
+WearLoc      -1
+ClassFlags   64
+ItemType     9
+Weight       2
+Level        80
+Timer        0
+Cost         1940
+Values       10 0 0 0
+Affect       -1 -1 -150 17 0
+Affect       -1 -1 14 18 0
+Affect       -1 -1 13 19 0
+Affect       -1 -1 75 13 0
+Affect       -1 -1 75 12 0
+Affect       -1 -1 1 1 0
+End
+
+#OBJECT
+Nest         0
+Name         ring greater power~
+ShortDescr   a ring of @@bgreater @@Rpower@@N~
+Description  A large band with a face of a laughing demon engraved on its face lies here in
+the dust.
+~
+Vnum         829
+ExtraFlags   262162
+WearFlags    3
+WearLoc      1
+ClassFlags   256
+ItemType     9
+Weight       1
+Level        5
+Timer        0
+Cost         2986
+Values       9 0 0 0
+Affect       -1 -1 -300 14 0
+Affect       -1 -1 -100 17 0
+Affect       -1 -1 14 18 0
+Affect       -1 -1 14 19 0
+Affect       -1 -1 100 12 0
+End
+
+#OBJECT
+Nest         0
+Name         shadow bracers~
+ShortDescr   the Shadow@@k bracers@@g~
+Description  The shadow of some kind of wrist guard can be seen on a nearby wall.
+~
+Vnum         835
+ExtraFlags   1668
+WearFlags    4097
+WearLoc      -1
+ClassFlags   64
+ItemType     9
+Weight       2
+Level        80
+Timer        0
+Cost         1940
+Values       10 0 0 0
+Affect       -1 -1 -150 17 0
+Affect       -1 -1 14 18 0
+Affect       -1 -1 13 19 0
+Affect       -1 -1 75 13 0
+Affect       -1 -1 75 12 0
+Affect       -1 -1 1 1 0
+End
+
+#OBJECT
+Nest         0
+Name         ring~
+ShortDescr   A @@cmystical @@Nring of the @@REnchanters@@N~
+Description  A @@cmystical @@Nring of the @@REnchanters@@N~
+Vnum         3090
+ExtraFlags   295040
+WearFlags    3
+WearLoc      2
+ClassFlags   1
+ItemType     9
+Weight       1
+Level        3
+Timer        0
+Cost         3406
+Values       10 0 0 0
+Affect       -1 -1 -50 17 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 20 19 0
+Affect       -1 -1 100 12 0
+Affect       -1 -1 200 13 0
+End
+
+#OBJECT
+Nest         0
+Name         Leggings of Presence~
+ShortDescr   @@mLeggings of Presence@@g~
+Description  @@mA set of leggings, intangible by the mere senses is here.@@g
+~
+Vnum         20613
+ExtraFlags   20
+WearFlags    33
+WearLoc      7
+ClassFlags   3
+ItemType     9
+Weight       1
+Level        80
+Timer        0
+Cost         1315
+Values       10 0 0 0
+Affect       -1 -1 70 12 0
+Affect       -1 -1 -15 24 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 11 19 0
+Affect       -1 -1 -120 17 0
+End
+
+#OBJECT
+Nest         0
+Name         harmony~
+ShortDescr   harmony~
+Description  One of The World's white bars is here.
+~
+Vnum         716
+ExtraFlags   0
+WearFlags    65537
+WearLoc      19
+ClassFlags   145
+ItemType     9
+Weight       1
+Level        60
+Timer        0
+Cost         1176
+Values       10 0 0 0
+Affect       -1 -1 10 13 0
+Affect       -1 -1 75 12 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 -60 17 0
+End
+
+#OBJECT
+Nest         0
+Name         medallion~
+ShortDescr   @@WA @@rturquoise @@Wand @@dObsidian @@yMedallion@@N~
+Description  @@WA @@rturquoise @@Wand @@dObsidian@@y medallion@@W lies here@@N.~
+Vnum         3090
+ExtraFlags   0
+WearFlags    5
+WearLoc      3
+ClassFlags   1
+ItemType     9
+Weight       2
+Level        75
+Timer        0
+Cost         1580
+Values       9 0 0 0
+Affect       -1 -1 -100 17 0
+Affect       -1 -1 80 13 0
+Affect       -1 -1 80 12 0
+Affect       -1 -1 13 18 0
+Affect       -1 -1 16 19 0
+End
+
+#OBJECT
+Nest         0
+Name         medallion~
+ShortDescr   @@WA @@rturquoise @@Wand @@dObsidian @@yMedallion@@N~
+Description  @@WA @@rturquoise @@Wand @@dObsidian@@y medallion@@W lies here@@N.~
+Vnum         3090
+ExtraFlags   0
+WearFlags    5
+WearLoc      4
+ClassFlags   1
+ItemType     9
+Weight       2
+Level        75
+Timer        0
+Cost         1580
+Values       10 0 0 0
+Affect       -1 -1 -100 17 0
+Affect       -1 -1 80 13 0
+Affect       -1 -1 80 12 0
+Affect       -1 -1 13 18 0
+Affect       -1 -1 16 19 0
+End
+
+#OBJECT
+Nest         0
+Name         staff~
+ShortDescr   @@NThe @@dDarke @@bstaff@@N~
+Description  @@NThe @@dDarke @@bstaff@@N~
+Vnum         3090
+ExtraFlags   32896
+WearFlags    16385
+WearLoc      0
+ClassFlags   1
+ItemType     1
+Weight       1
+Level        60
+Timer        0
+Cost         1455
+Values       0 0 -1 0
+Affect       -1 -1 -80 17 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 90 12 0
+Affect       -1 -1 90 13 0
+End
+
+#OBJECT
+Nest         0
+Name         burning rage~
+ShortDescr   @@eBurning Rage@@N~
+Description  ~
+Vnum         5612
+ExtraFlags   17
+WearFlags    129
+WearLoc      9
+Objfun       objfun_cast_fight~
+ClassFlags   1
+ItemType     9
+Weight       4
+Level        80
+Timer        0
+Cost         1129
+Values       11 0 0 0
+Affect       -1 -1 1 5 0
+Affect       -1 -1 -1 4 0
+Affect       -1 -1 1 1 0
+Affect       -1 -1 -1 3 0
+Affect       -1 -1 -52 17 0
+Affect       -1 -1 69 12 0
+Affect       -1 -1 69 13 0
+Affect       -1 -1 14 18 0
+Affect       -1 -1 16 19 0
+End
+
+#OBJECT
+Nest         0
+Name         security pass~
+ShortDescr   @@dSecurity @@lPass@@N~
+Description  @@dA piece of paper with strange writing on it lies on the ground.@@N
+~
+Vnum         6621
+ExtraFlags   131072
+WearFlags    16385
+WearLoc      17
+ClassFlags   1
+ItemType     9
+Weight       1
+Level        80
+Timer        0
+Cost         1980
+Values       10 0 0 0
+Affect       -1 -1 -175 17 0
+Affect       -1 -1 -20 24 0
+Affect       -1 -1 100 13 0
+Affect       -1 -1 14 19 0
+Affect       -1 -1 14 18 0
+End
+
+#OBJECT
+Nest         0
+Name         battle helmet~
+ShortDescr   @@eMinotaur @@dBattle Helmet@@N~
+Description  @@dA very large helmet with two holes on the top lies on the ground.@@N
+~
+Vnum         6619
+ExtraFlags   131072
+WearFlags    17
+WearLoc      6
+ClassFlags   1
+ItemType     9
+Weight       25
+Level        80
+Timer        0
+Cost         1920
+Values       10 0 0 0
+Affect       -1 -1 18 19 0
+Affect       -1 -1 18 18 0
+Affect       -1 -1 -170 17 0
+Affect       -1 -1 75 13 0
+End
+
+#OBJECT
+Nest         0
+Name         Bracelet of Agility~
+ShortDescr   an intricately twisted bracelet~
+Description  An intricately twisted bracelet lies here.~
+Vnum         14526
+ExtraFlags   262176
+WearFlags    4097
+WearLoc      15
+ClassFlags   1
+ItemType     9
+Weight       10
+Level        30
+Timer        0
+Cost         3020
+Values       10 0 0 0
+Affect       -1 -1 -175 17 0
+Affect       -1 -1 8 19 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 4 2 0
+End
+
+#OBJECT
+Nest         0
+Name         Pack~
+ShortDescr   crystal Pack~
+Description  A Crystal Pack has been carelessly dropped here.
+~
+Vnum         21498
+ExtraFlags   257
+WearFlags    1
+WearLoc      -1
+ClassFlags   1
+ItemType     15
+Weight       5
+Level        75
+Timer        0
+Cost         75
+Values       250 0 0 0
+End
+
+#OBJECT
+Nest         1
+Name         enforcer~
+ShortDescr   @@WA @@rTurquoise @@REnforcer@@N~
+Description  @@WA spiked mace with @@rturquoise bands@@N has been left here.
+~
+Vnum         3090
+ExtraFlags   4194324
+WearFlags    270337
+WearLoc      -1
+Objfun       objfun_cast_fight~
+ClassFlags   257
+ItemType     5
+Weight       3
+Level        69
+Timer        0
+Cost         1246
+Values       0 13 31 8
+Affect       -1 -1 14 19 0
+Affect       -1 -1 12 18 0
+Affect       -1 -1 -70 17 0
+Affect       -1 -1 50 13 0
+End
+
+#OBJECT
+Nest         1
+Name         the throes of passion~
+ShortDescr   @@mThroes of Passion@@N~
+Description  A tangable passion lies here.
+~
+Vnum         5622
+ExtraFlags   4
+WearFlags    4097
+WearLoc      -1
+ClassFlags   16384
+ItemType     9
+Weight       1
+Level        80
+Timer        0
+Cost         855
+Values       9 0 0 0
+Affect       -1 -1 -45 17 0
+Affect       -1 -1 13 19 0
+Affect       -1 -1 90 13 0
+Affect       -1 -1 -30 12 0
+Affect       -1 -1 16 18 0
+End
+
+#OBJECT
+Nest         1
+Name         the throes of passion~
+ShortDescr   @@mThroes of Passion@@N~
+Description  A tangable passion lies here.
+~
+Vnum         5622
+ExtraFlags   4
+WearFlags    4097
+WearLoc      -1
+ClassFlags   16384
+ItemType     9
+Weight       1
+Level        80
+Timer        0
+Cost         855
+Values       11 0 0 0
+Affect       -1 -1 -45 17 0
+Affect       -1 -1 13 19 0
+Affect       -1 -1 90 13 0
+Affect       -1 -1 -30 12 0
+Affect       -1 -1 16 18 0
+End
+
+#OBJECT
+Nest         1
+Name         boots~
+ShortDescr   @@eMinotaur @@dBoots@@N~
+Description  @@dA large pair of @@eMinotaur @@dboots lies on the ground.@@N
+~
+Vnum         6620
+ExtraFlags   131392
+WearFlags    65
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       1
+Level        80
+Timer        0
+Cost         1755
+Values       10 0 0 0
+Affect       -1 -1 -150 17 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 50 13 0
+Affect       -1 -1 50 12 0
+Affect       -1 -1 -100 14 0
+End
+
+#OBJECT
+Nest         1
+Name         cloak~
+ShortDescr   @@dDark cloak@@N~
+Description  Heres a cloak....it is Dark-colored~
+Vnum         7548
+ExtraFlags   131108
+WearFlags    1025
+WearLoc      -1
+ClassFlags   45
+ItemType     9
+Weight       5
+Level        40
+Timer        0
+Cost         1320
+Values       6 0 0 0
+Affect       -1 -1 -150 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 -10 23 0
+End
+
+#OBJECT
+Nest         1
+Name         kkrk make shift morning star 19~
+ShortDescr   @@BA @@cMake@@B-@@cShift @@BMorning@@c-@@BStar@@N~
+Description  @@cA @@Bweak @@Blooking @@cmorning@@B-@@cstar @@Blies @@chere@@B...@@N
+~
+Vnum         3090
+ExtraFlags   0
+WearFlags    16385
+WearLoc      -1
+ClassFlags   1
+ItemType     29
+Weight       1
+Level        69
+Timer        0
+Cost         589
+Values       0 5729 5724 0
+Affect       -1 -1 23 19 0
+Affect       -1 -1 17 18 0
+Affect       -1 -1 2 3 0
+Affect       -1 -1 2 4 0
+Affect       -1 -1 80 13 0
+End
+
+#OBJECT
+Nest         1
+Name         6 shrunken human head belt~
+ShortDescr   6 Shrunken-human-head belt.~
+Description  A waist garment with 6 human heads dangling from it is here.
+~
+Vnum         16868
+ExtraFlags   262148
+WearFlags    2049
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       3
+Level        20
+Timer        0
+Cost         920
+Values       10 0 0 0
+Affect       -1 -1 -80 12 0
+Affect       -1 -1 140 13 0
+Affect       -1 -1 1 1 0
+Affect       -1 -1 20 19 0
+Affect       -1 -1 4 18 0
+Affect       -1 -1 -2 4 0
+End
+
+#OBJECT
+Nest         1
+Name         rod~
+ShortDescr   the rod of discipline~
+Description  A nasty ribbed rod lies here.
+~
+Vnum         3090
+ExtraFlags   8388688
+WearFlags    16385
+WearLoc      -1
+ClassFlags   257
+ItemType     9
+Weight       3
+Level        70
+Timer        0
+Cost         1794
+Values       9 0 0 0
+Affect       -1 -1 14 19 0
+Affect       -1 -1 15 18 0
+Affect       -1 -1 75 12 0
+Affect       -1 -1 -90 17 0
+Affect       -1 -1 -10 24 0
+Affect       -1 -1 60 13 0
+End
+
+#OBJECT
+Nest         1
+Name         longsword~
+ShortDescr   @@WA @@EMinotaur@@y Longsword@@N~
+Description  @@WA nasty @@ylongsword@@N glitters in the light.@@N~
+Vnum         3090
+ExtraFlags   262144
+WearFlags    8193
+WearLoc      -1
+ClassFlags   1
+ItemType     5
+Weight       15
+Level        60
+Timer        0
+Cost         4480
+Values       0 13 34 3
+Affect       -1 -1 -150 17 0
+Affect       -1 -1 24 18 0
+Affect       -1 -1 28 19 0
+Affect       -1 -1 180 13 0
+End
+
+#OBJECT
+Nest         1
+Name         longsword~
+ShortDescr   @@WA @@EMinotaur@@y Longsword@@N~
+Description  @@WA nasty @@ylongsword@@N glitters in the light.@@N~
+Vnum         3090
+ExtraFlags   262144
+WearFlags    8193
+WearLoc      -1
+ClassFlags   1
+ItemType     5
+Weight       15
+Level        60
+Timer        0
+Cost         4480
+Values       0 13 33 3
+Affect       -1 -1 -150 17 0
+Affect       -1 -1 24 18 0
+Affect       -1 -1 28 19 0
+Affect       -1 -1 180 13 0
+End
+
+#OBJECT
+Nest         1
+Name         longsword~
+ShortDescr   @@WA @@EMinotaur@@y Longsword@@N~
+Description  @@WA nasty @@ylongsword@@N glitters in the light.@@N~
+Vnum         3090
+ExtraFlags   262144
+WearFlags    8193
+WearLoc      -1
+ClassFlags   1
+ItemType     5
+Weight       15
+Level        60
+Timer        0
+Cost         4480
+Values       0 12 33 3
+Affect       -1 -1 -150 17 0
+Affect       -1 -1 24 18 0
+Affect       -1 -1 28 19 0
+Affect       -1 -1 180 13 0
+End
+
+#OBJECT
+Nest         1
+Name         Pleurant Robes~
+ShortDescr   @@aPluerant Robes@@N~
+Description  Dark grey Pluerant Robes lay here.~
+Vnum         14512
+ExtraFlags   262723
+WearFlags    9
+WearLoc      -1
+ClassFlags   3
+ItemType     9
+Weight       5
+Level        50
+Timer        0
+Cost         4330
+Values       10 0 0 0
+Affect       -1 -1 4 4 0
+Affect       -1 -1 -250 17 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 19 19 0
+End
+
+#OBJECT
+Nest         1
+Name         Bracelet of Agility~
+ShortDescr   an intricately twisted bracelet~
+Description  An intricately twisted bracelet lies here.~
+Vnum         14526
+ExtraFlags   262176
+WearFlags    4097
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       10
+Level        30
+Timer        0
+Cost         3020
+Values       10 0 0 0
+Affect       -1 -1 -175 17 0
+Affect       -1 -1 8 19 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 4 2 0
+End
+
+#OBJECT
+Nest         1
+Name         battle helmet~
+ShortDescr   @@eMinotaur @@dBattle Helmet@@N~
+Description  @@dA very large helmet with two holes on the top lies on the ground.@@N
+~
+Vnum         6619
+ExtraFlags   131072
+WearFlags    17
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       25
+Level        80
+Timer        0
+Cost         1920
+Values       11 0 0 0
+Affect       -1 -1 18 19 0
+Affect       -1 -1 18 18 0
+Affect       -1 -1 -170 17 0
+Affect       -1 -1 75 13 0
+End
+
+#OBJECT
+Nest         1
+Name         security pass~
+ShortDescr   @@dSecurity @@lPass@@N~
+Description  @@dA piece of paper with strange writing on it lies on the ground.@@N
+~
+Vnum         6621
+ExtraFlags   131072
+WearFlags    16385
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       1
+Level        80
+Timer        0
+Cost         1980
+Values       10 0 0 0
+Affect       -1 -1 -175 17 0
+Affect       -1 -1 -20 24 0
+Affect       -1 -1 100 13 0
+Affect       -1 -1 14 19 0
+Affect       -1 -1 14 18 0
+End
+
+#OBJECT
+Nest         1
+Name         Zared's chains~
+ShortDescr   zared's Chains~
+Description  Zared, the Cursed Corpse, has left his chains behind here.~
+Vnum         14532
+ExtraFlags   262145
+WearFlags    4097
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       25
+Level        70
+Timer        0
+Cost         3830
+Values       11 0 0 0
+Affect       -1 -1 -200 17 0
+Affect       -1 -1 24 18 0
+Affect       -1 -1 25 19 0
+Affect       -1 -1 20 9 0
+Affect       -1 -1 -3 1 0
+Affect       -1 -1 -500 14 0
+End
+
+#OBJECT
+Nest         1
+Name         gnarled Oak Staff~
+ShortDescr   gnarled Oak Staff~
+Description  An ancient staff, of old gnarled oak
+~
+Vnum         7543
+ExtraFlags   0
+WearFlags    16385
+WearLoc      -1
+ClassFlags   1
+ItemType     3
+Weight       1
+Level        40
+Timer        0
+Cost         40
+Values       45 32 20 39
+Spell 3      'dispel magic'
+End
+
+#OBJECT
+Nest         1
+Name         cloak~
+ShortDescr   @@dDark cloak@@N~
+Description  Heres a cloak....it is Dark-colored~
+Vnum         7548
+ExtraFlags   131108
+WearFlags    1025
+WearLoc      -1
+ClassFlags   45
+ItemType     9
+Weight       5
+Level        40
+Timer        0
+Cost         1320
+Values       7 0 0 0
+Affect       -1 -1 -150 17 0
+Affect       -1 -1 10 18 0
+Affect       -1 -1 10 19 0
+Affect       -1 -1 -10 23 0
+End
+
+#OBJECT
+Nest         1
+Name         enforcer~
+ShortDescr   @@WA @@rTurquoise @@REnforcer@@N~
+Description  @@WA spiked mace with @@rturquoise bands@@N has been left here.
+~
+Vnum         3090
+ExtraFlags   4194324
+WearFlags    270337
+WearLoc      -1
+Objfun       objfun_cast_fight~
+ClassFlags   257
+ItemType     5
+Weight       3
+Level        69
+Timer        0
+Cost         1246
+Values       0 11 30 8
+Affect       -1 -1 14 19 0
+Affect       -1 -1 12 18 0
+Affect       -1 -1 -70 17 0
+Affect       -1 -1 50 13 0
+End
+
+#OBJECT
+Nest         1
+Name         Bracelet of Agility~
+ShortDescr   an intricately twisted bracelet~
+Description  An intricately twisted bracelet lies here.~
+Vnum         14526
+ExtraFlags   262176
+WearFlags    4097
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       10
+Level        30
+Timer        0
+Cost         3020
+Values       11 0 0 0
+Affect       -1 -1 -175 17 0
+Affect       -1 -1 8 19 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 4 2 0
+End
+
+#OBJECT
+Nest         1
+Name         Bracelet of Agility~
+ShortDescr   an intricately twisted bracelet~
+Description  An intricately twisted bracelet lies here.~
+Vnum         14526
+ExtraFlags   262176
+WearFlags    4097
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       10
+Level        30
+Timer        0
+Cost         3020
+Values       10 0 0 0
+Affect       -1 -1 -175 17 0
+Affect       -1 -1 8 19 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 4 2 0
+End
+
+#OBJECT
+Nest         1
+Name         security pass~
+ShortDescr   @@dSecurity @@lPass@@N~
+Description  @@dA piece of paper with strange writing on it lies on the ground.@@N
+~
+Vnum         6621
+ExtraFlags   131072
+WearFlags    16385
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       1
+Level        80
+Timer        0
+Cost         1980
+Values       9 0 0 0
+Affect       -1 -1 -175 17 0
+Affect       -1 -1 -20 24 0
+Affect       -1 -1 100 13 0
+Affect       -1 -1 14 19 0
+Affect       -1 -1 14 18 0
+End
+
+#OBJECT
+Nest         1
+Name         major globe~
+ShortDescr   a major globe of invuneralbilty~
+Description  A large ward lies here glimmering.
+~
+Vnum         832
+ExtraFlags   262467
+WearFlags    16385
+WearLoc      -1
+ClassFlags   144
+ItemType     1
+Weight       8
+Level        40
+Timer        0
+Cost         6408
+Values       0 0 -1 0
+Affect       -1 -1 -200 17 0
+Affect       -1 -1 150 13 0
+Affect       -1 -1 95 12 0
+Affect       -1 -1 -30 24 0
+End
+
+#OBJECT
+Nest         1
+Name         ring greater power~
+ShortDescr   a ring of @@bgreater @@Rpower@@N~
+Description  A large band with a face of a laughing demon engraved on its face lies here in
+the dust.
+~
+Vnum         829
+ExtraFlags   262162
+WearFlags    3
+WearLoc      -1
+ClassFlags   256
+ItemType     9
+Weight       1
+Level        5
+Timer        0
+Cost         2986
+Values       10 0 0 0
+Affect       -1 -1 -300 14 0
+Affect       -1 -1 -100 17 0
+Affect       -1 -1 14 18 0
+Affect       -1 -1 14 19 0
+Affect       -1 -1 100 12 0
+End
+
+#OBJECT
+Nest         1
+Name         Shadowen's Coat~
+ShortDescr   @@mShadowen's Coat@@g~
+Description  @@mA Coat of the finest, black chainmail lies here, feathery in weight.@@g
+~
+Vnum         20611
+ExtraFlags   516
+WearFlags    9
+WearLoc      -1
+ClassFlags   16513
+ItemType     9
+Weight       1
+Level        80
+Timer        0
+Cost         1935
+Values       10 0 0 0
+Affect       -1 -1 13 19 0
+Affect       -1 -1 13 18 0
+Affect       -1 -1 75 13 0
+Affect       -1 -1 75 12 0
+Affect       -1 -1 -150 17 0
+End
+
+#OBJECT
+Nest         1
+Name         battle helmet~
+ShortDescr   @@eMinotaur @@dBattle Helmet@@N~
+Description  @@dA very large helmet with two holes on the top lies on the ground.@@N
+~
+Vnum         6619
+ExtraFlags   131072
+WearFlags    17
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       25
+Level        80
+Timer        0
+Cost         1920
+Values       11 0 0 0
+Affect       -1 -1 18 19 0
+Affect       -1 -1 18 18 0
+Affect       -1 -1 -170 17 0
+Affect       -1 -1 75 13 0
+End
+
+#OBJECT
+Nest         1
+Name         helmet~
+ShortDescr   @@ebloodstone@@N helmet~
+Description  Mebron's Bloodstone Helmet sets here.~
+Vnum         14510
+ExtraFlags   262179
+WearFlags    17
+WearLoc      -1
+ClassFlags   257
+ItemType     9
+Weight       1
+Level        50
+Timer        0
+Cost         4784
+Values       9 0 0 0
+Affect       -1 -1 -200 17 0
+Affect       -1 -1 20 18 0
+Affect       -1 -1 18 19 0
+Affect       -1 -1 3 1 0
+End
+
+#OBJECT
+Nest         1
+Name         Cloak~
+ShortDescr   the Cloak of the Banshee~
+Description  A tattered blood spattered Banshee's Cloak lies here, fluttering in the wind.
+ 
+~
+Vnum         14503
+ExtraFlags   262208
+WearFlags    5
+WearLoc      -1
+ClassFlags   1
+ItemType     9
+Weight       10
+Level        50
+Timer        0
+Cost         4520
+Values       10 0 0 0
+Affect       -1 -1 -130 17 0
+Affect       -1 -1 150 13 0
+Affect       -1 -1 -30 23 0
+Affect       -1 -1 200 12 0
+Affect       -1 -1 22 19 0
+End
+
+#OBJECT
+Nest         1
+Name         bag clue~
+ShortDescr   @@Na @@aclue@@N bag.~
+Description  @@NA @@aclue @@Nbag lies here, waiting for you to take it.
+~
+Vnum         20119
+ExtraFlags   0
+WearFlags    1
+WearLoc      -1
+ClassFlags   1
+ItemType     15
+Weight       1
+Level        1
+Timer        0
+Cost         10
+Values       20 0 0 0
+End
+
+#OBJECT
+Nest         2
+Name         carrot~
+ShortDescr   @@NA @@ycarrot@@N~
+Description  @@NA single yummy @@ycarrot@@N lies here!
+~
+Vnum         3905
+ExtraFlags   0
+WearFlags    1
+WearLoc      -1
+ClassFlags   1
+ItemType     26
+Weight       1
+Level        35
+Timer        0
+Cost         35
+Values       1 28 94 -1
+End
+
+#OBJECT
+Nest         2
+Name         carrot~
+ShortDescr   @@NA @@ycarrot@@N~
+Description  @@NA single yummy @@ycarrot@@N lies here!
+~
+Vnum         3905
+ExtraFlags   0
+WearFlags    1
+WearLoc      -1
+ClassFlags   1
+ItemType     26
+Weight       1
+Level        35
+Timer        0
+Cost         35
+Values       1 28 94 -1
+End
+
+#OBJECT
+Nest         2
+Name         carrot~
+ShortDescr   @@NA @@ycarrot@@N~
+Description  @@NA single yummy @@ycarrot@@N lies here!
+~
+Vnum         3905
+ExtraFlags   0
+WearFlags    1
+WearLoc      -1
+ClassFlags   1
+ItemType     26
+Weight       1
+Level        35
+Timer        0
+Cost         35
+Values       1 28 94 -1
+End
+
+#OBJECT
+Nest         2
+Name         carrot~
+ShortDescr   @@NA @@ycarrot@@N~
+Description  @@NA single yummy @@ycarrot@@N lies here!
+~
+Vnum         3905
+ExtraFlags   0
+WearFlags    1
+WearLoc      -1
+ClassFlags   1
+ItemType     26
+Weight       1
+Level        35
+Timer        0
+Cost         35
+Values       1 28 94 -1
+End
+
+#OBJECT
+Nest         2
+Name         carrot~
+ShortDescr   @@NA @@ycarrot@@N~
+Description  @@NA single yummy @@ycarrot@@N lies here!
+~
+Vnum         3905
+ExtraFlags   0
+WearFlags    1
+WearLoc      -1
+ClassFlags   1
+ItemType     26
+Weight       1
+Level        35
+Timer        0
+Cost         35
+Values       1 28 94 -1
+End
+
+#OBJECT
+Nest         2
+Name         mushroom~
+ShortDescr   a Magic Mushroom~
+Description  A delicious magic mushroom is here.~
+Vnum         20
+ExtraFlags   0
+WearFlags    1
+WearLoc      -1
+ClassFlags   1
+ItemType     19
+Weight       1
+Level        0
+Timer        0
+Cost         10
+Values       75 0 0 0
+End
+
+#OBJECT
+Nest         2
+Name         mushroom~
+ShortDescr   a Magic Mushroom~
+Description  A delicious magic mushroom is here.~
+Vnum         20
+ExtraFlags   0
+WearFlags    1
+WearLoc      -1
+ClassFlags   1
+ItemType     19
+Weight       1
+Level        0
+Timer        0
+Cost         10
+Values       84 0 0 0
+End
+
+#OBJECT
+Nest         2
+Name         mushroom~
+ShortDescr   a Magic Mushroom~
+Description  A delicious magic mushroom is here.~
+Vnum         20
+ExtraFlags   0
+WearFlags    1
+WearLoc      -1
+ClassFlags   1
+ItemType     19
+Weight       1
+Level        0
+Timer        0
+Cost         10
+Values       75 0 0 0
+End
+
+#OBJECT
+Nest         0
+Name         shadow boots~
+ShortDescr   the @@gShadow@@k boots@@g~
+Description  Boots that flow from your feet to the shadows on the wall.
+~
+Vnum         834
+ExtraFlags   263812
+WearFlags    65
+WearLoc      8
+ClassFlags   96
+ItemType     9
+Weight       5
+Level        20
+Timer        0
+Cost         4560
+Values       9 0 0 0
+Affect       -1 -1 60 12 0
+Affect       -1 -1 19 18 0
+Affect       -1 -1 13 19 0
+Affect       -1 -1 80 13 0
+Affect       -1 -1 -200 17 0
+Affect       -1 -1 2 2 0
+End
+
+#OBJECT
+Nest         0
+Name         Bracelet of Agility~
+ShortDescr   an intricately twisted bracelet~
+Description  An intricately twisted bracelet lies here.~
+Vnum         14526
+ExtraFlags   262176
+WearFlags    4097
+WearLoc      14
+ClassFlags   1
+ItemType     9
+Weight       10
+Level        30
+Timer        0
+Cost         3020
+Values       10 0 0 0
+Affect       -1 -1 -175 17 0
+Affect       -1 -1 8 19 0
+Affect       -1 -1 8 18 0
+Affect       -1 -1 4 2 0
+End
+
+#END
