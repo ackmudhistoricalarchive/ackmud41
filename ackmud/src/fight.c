@@ -33,9 +33,8 @@
 #include <time.h>
 #include "merc.h"
 #include "tables.h"
-#include <math.h>
 
-bool    deathmatch;
+extern bool deathmatch;
 
 extern POL_DATA	politics_data;
 extern CHAR_DATA * quest_target;

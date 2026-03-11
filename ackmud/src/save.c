@@ -77,7 +77,7 @@ void    system          args( ( char *string ) );
 static  OBJ_DATA *      rgObjNest       [MAX_NEST];
 
 
-bool                deathmatch;         /* Deathmatch happening?        */
+extern bool deathmatch;         /* Deathmatch happening?        */
 
 
 /*
@@ -552,24 +552,27 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
      hash_changed_vnums=create_hash_table(1024);
      
      fp=fopen("area_changes.txt","r");
-     while (!feof(fp))
+     if ( fp != NULL )
      {
-      if (   str_cmp( fread_word(fp), "Obj:" )
-          || fread_letter(fp) != '['
-          || (oldvnum = fread_number(fp)) == 0
-          || fread_letter(fp) != ']'
-          || str_cmp( fread_word(fp) , "->") 
-          || fread_letter(fp) != '['
-          || (newvnum = fread_number(fp)) == 0
-          || fread_letter(fp) != ']' )
-         fread_to_eol(fp);
-      else
+      while (!feof(fp))
       {
-         fread_to_eol(fp);
-         add_hash_entry(hash_changed_vnums,oldvnum,(void *) newvnum);
+       if (   str_cmp( fread_word(fp), "Obj:" )
+           || fread_letter(fp) != '['
+           || (oldvnum = fread_number(fp)) == 0
+           || fread_letter(fp) != ']'
+           || str_cmp( fread_word(fp) , "->") 
+           || fread_letter(fp) != '['
+           || (newvnum = fread_number(fp)) == 0
+           || fread_letter(fp) != ']' )
+          fread_to_eol(fp);
+       else
+       {
+          fread_to_eol(fp);
+          add_hash_entry(hash_changed_vnums,oldvnum,(void *) newvnum);
+       }
       }
+      fclose(fp);
      }
-     fclose(fp);
     }
 
     if ( d == NULL ) /* load npc */

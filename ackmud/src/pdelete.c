@@ -12,7 +12,6 @@
 #include <string.h>
 #include "merc.h"
 #include "tables.h"
-#include <math.h>
 #include <ctype.h>
 
 void do_sdelete( CHAR_DATA *ch, char *argument )

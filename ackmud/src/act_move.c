@@ -34,7 +34,7 @@
 #include "merc.h"
 #define NOWHERE -1
 bool    check_valid_ride ( CHAR_DATA *  ch );
-bool        deathmatch;
+extern bool deathmatch;
 char *  const	compass_name	[]		=
 {
     "north", "east", "south", "west", "up", "down"
