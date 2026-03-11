@@ -48,3 +48,4 @@ clean:
 
 integration-test: merc
 	python3 tests/integration_login_test.py
+	python3 tests/integration_websocket_login_test.py
