@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACK! MUD Client</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f1115;
+      --panel: #1a1f29;
+      --border: #2b3442;
+      --text: #e6edf3;
+      --accent: #61afef;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--panel);
+    }
+
+    .world-picker {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      max-width: 420px;
+    }
+
+    label { font-weight: 600; }
+    select {
+      padding: 0.6rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #0b0f14;
+      color: var(--text);
+    }
+
+    main {
+      flex: 1;
+      padding: 1rem;
+      padding-bottom: 5.5rem;
+    }
+
+    .terminal {
+      width: 100%;
+      min-height: 50vh;
+      border: 1px solid var(--border);
+      background: #000;
+      border-radius: 8px;
+      padding: 0.8rem;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .command-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.9rem 1rem;
+      border-top: 1px solid var(--border);
+      background: var(--panel);
+    }
+
+    .command-bar input {
+      flex: 1;
+      min-width: 0;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      padding: 0.7rem;
+      background: #0b0f14;
+      color: var(--text);
+    }
+
+    .command-bar button {
+      border: 1px solid #4e8bc7;
+      background: var(--accent);
+      color: #04111f;
+      border-radius: 6px;
+      padding: 0.7rem 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="world-picker">
+      <label for="world">World</label>
+      <select id="world" name="world">
+        <option value="ackmud.com:8890">ACK!TNG (ackmud.com:8890)</option>
+        <option value="ackmud.com:8891">ACK!4.3.1 (ackmud.com:8891)</option>
+        <option value="ackmud.com:8892">ACK!4.2 (ackmud.com:8892)</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <div class="terminal" id="terminal">Welcome to the ACK! web client.
+Select a world, then connect.</div>
+  </main>
+
+  <form class="command-bar" id="command-form">
+    <input id="command" type="text" placeholder="Enter command..." autocomplete="off" />
+    <button type="submit">Send</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('command-form');
+    const input = document.getElementById('command');
+    const terminal = document.getElementById('terminal');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!input.value.trim()) return;
+      terminal.textContent += `\n> ${input.value}`;
+      input.value = '';
+      terminal.scrollTop = terminal.scrollHeight;
+    });
+  </script>
+</body>
+</html>
