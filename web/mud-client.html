@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACK! MUD Client</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f1115;
+      --panel: #1a1f29;
+      --border: #2b3442;
+      --text: #e6edf3;
+      --accent: #61afef;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .mud-client {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mud-client__header {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--panel);
+    }
+
+    .world-picker {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      max-width: 420px;
+    }
+
+    label { font-weight: 600; }
+
+    select {
+      padding: 0.6rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #0b0f14;
+      color: var(--text);
+    }
+
+    .mud-client__main {
+      flex: 1;
+      padding: 1rem;
+      padding-bottom: 5.5rem;
+    }
+
+    #terminal {
+      width: 100%;
+      min-height: 50vh;
+      border: 1px solid var(--border);
+      background: #000;
+      border-radius: 8px;
+      padding: 0.8rem;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .command-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      gap: 0.75rem;
+      padding: 0.9rem 1rem;
+      border-top: 1px solid var(--border);
+      background: var(--panel);
+      z-index: 10;
+    }
+
+    #command {
+      flex: 1;
+      min-width: 0;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      padding: 0.7rem;
+      background: #0b0f14;
+      color: var(--text);
+    }
+
+    #send {
+      border: 1px solid #4e8bc7;
+      background: var(--accent);
+      color: #04111f;
+      border-radius: 6px;
+      padding: 0.7rem 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="mud-client">
+    <header class="mud-client__header">
+      <div class="world-picker">
+        <label for="world">World</label>
+        <select id="world" name="world"></select>
+      </div>
+    </header>
+
+    <main class="mud-client__main">
+      <div id="terminal" aria-live="polite"></div>
+    </main>
+
+    <form class="command-bar" id="command-form">
+      <input id="command" type="text" placeholder="Enter command..." autocomplete="off" />
+      <button id="send" type="submit">Send</button>
+    </form>
+  </div>
+
+  <script>
+    (function mergeWithExistingClient() {
+      const worlds = [
+        { label: 'ACK!TNG', value: 'ackmud.com:8890' },
+        { label: 'ACK!4.3.1', value: 'ackmud.com:8891' },
+        { label: 'ACK!4.2', value: 'ackmud.com:8892' }
+      ];
+
+      const worldSelect = document.getElementById('world');
+      const form = document.getElementById('command-form');
+      const input = document.getElementById('command');
+      const output = document.getElementById('terminal');
+
+      worldSelect.innerHTML = '';
+      for (const world of worlds) {
+        const option = document.createElement('option');
+        option.value = world.value;
+        option.textContent = `${world.label} (${world.value})`;
+        worldSelect.appendChild(option);
+      }
+
+      // Fallback behavior only. Existing client code can override this submit handling.
+      form.addEventListener('submit', (event) => {
+        if (event.defaultPrevented) return;
+        event.preventDefault();
+
+        const command = input.value.trim();
+        if (!command) return;
+
+        if (output) {
+          output.textContent += `${output.textContent ? '\n' : ''}> ${command}`;
+          output.scrollTop = output.scrollHeight;
+        }
+
+        input.value = '';
+      });
+    })();
+  </script>
+</body>
+</html>
