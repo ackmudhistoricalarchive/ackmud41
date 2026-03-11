@@ -34,7 +34,6 @@
 #include <time.h>
 #include "merc.h"
 #include "tables.h"
-#include <math.h>
 
 void reset_gain_stats( CHAR_DATA * ch )
 {

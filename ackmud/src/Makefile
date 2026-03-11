@@ -1,3 +1,5 @@
+all: merc integration-test
+
 CC      = gcc
 PROF    = 
 NOCRYPT =
@@ -30,7 +32,7 @@ O_FILES = act_comm.o act_info.o act_move.o act_obj.o act_wiz.o comm.o const.o \
 
 merc: $(O_FILES)
 	rm -f merc
-	$(CC) $(L_FLAGS) -o merc $(O_FILES) /usr/lib/libm.a
+	$(CC) $(L_FLAGS) -o merc $(O_FILES) -lm -lcrypt
 
 .c.o: merc.h
 	$(CC) -c $(C_FLAGS) $<
@@ -43,3 +45,6 @@ clean:
 	rm -f $(O_FILES) merc ../area/core
 	make
 
+
+integration-test: merc
+	python3 tests/integration_login_test.py

@@ -38,6 +38,7 @@
 
 #define IMC_INTERNALS
 #include "imc.h"
+#include <time.h>
 
 /*
  *  Local declarations + some global stuff from imc.h
@@ -745,7 +746,7 @@ static void do_send(int i, const char *line)
 /*  try to read a line from the input buffer, NULL if none ready
  *  all lines are \n\r terminated in theory, but take other combinations
  */
-static const char *getline(char *buffer)
+static const char *imc_getline(char *buffer)
 {
   int i;
   static char buf[IMC_PACKET_LENGTH];
@@ -1309,7 +1310,7 @@ void imc_ll_idle()
     while (imc[i].inuse &&
 	   imc[i].spamcounter1<=IMC_SPAM1LIMIT &&
 	   imc[i].spamcounter2<=IMC_SPAM2LIMIT &&
-	   (command = getline(imc[i].inbuf)) != NULL)
+	   (command = imc_getline(imc[i].inbuf)) != NULL)
     {
       handled=1;
 

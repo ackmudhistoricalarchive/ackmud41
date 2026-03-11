@@ -17,7 +17,6 @@
 #include <string.h>
 #include <time.h>
 #include "merc.h"
-#include <math.h>
 
 bool able_to_level ( CHAR_DATA *ch );
 void gain_level ( CHAR_DATA *ch );

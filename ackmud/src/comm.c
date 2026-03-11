@@ -154,18 +154,7 @@ int     socket          args( ( int domain, int type, int protocol ) );
 #endif
 
 #if     defined(linux)
-int     accept          args( ( int s, struct sockaddr *addr, int *addrlen ) );
-int     bind            args( ( int s, struct sockaddr *name, int namelen ) );
-int     close           args( ( int fd ) );
-int     getpeername     args( ( int s, struct sockaddr *name, int *namelen ) );
-int     getsockname     args( ( int s, struct sockaddr *name, int *namelen ) );
-int     gettimeofday    args( ( struct timeval *tp, struct timezone *tzp ) );
-int     listen          args( ( int s, int backlog ) );
-/*int     read            args( ( int fd, char *buf, int nbyte ) );*/
-int     select          args( ( int width, fd_set *readfds, fd_set *writefds,
-			    fd_set *exceptfds, struct timeval *timeout ) );
-int     socket          args( ( int domain, int type, int protocol ) );
-/*int     write           args( ( int fd, char *buf, int nbyte ) );*/
+/* Modern system headers already provide these declarations on Linux. */
 #endif
 
 #if     defined(macintosh)
@@ -3645,8 +3634,7 @@ void send_to_descrips( const char *message )
  */
 void do_hotreboo (CHAR_DATA *ch, char * argument)
 {
-	send_to_char("If you want to do a @@R@@fHOT@@Breboot@@N....spell it 
-out.\n\r", ch );
+	send_to_char("If you want to do a @@R@@fHOT@@Breboot@@N....spell it out.\n\r", ch );
 	return;
 }
 
@@ -3678,8 +3666,7 @@ void do_hotreboot (CHAR_DATA *ch, char * argument)
 	/* do_asave (NULL, ""); - autosave changed areas */
 /*	imc_shutdown(); */  /* IMC */	
 	/* next line here needs color not familiar with the color codes */
-	sprintf (buf, "\n\r *** HOTreboot by An Immortal - Please remain ONLINE...
-We will be back in 30 seconds! ***%s\r", "");
+	sprintf (buf, "\n\r *** HOTreboot by An Immortal - Please remain ONLINE... We will be back in 30 seconds! ***%s\r", "");
 	
 	/* For each PLAYING descriptor( non-negative ), save its state */
 	for (d = first_desc; d ; d = d_next)
