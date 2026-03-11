@@ -13,9 +13,7 @@
       --text: #e6edf3;
       --accent: #61afef;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
@@ -23,94 +21,45 @@
       color: var(--text);
       min-height: 100vh;
     }
-
-    .mud-client {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .mud-client__header {
-      padding: 1rem;
-      border-bottom: 1px solid var(--border);
-      background: var(--panel);
-    }
-
-    .world-picker {
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-      max-width: 420px;
-    }
-
+    .mud-client { min-height: 100vh; display: flex; flex-direction: column; }
+    .mud-client__header { padding: 1rem; border-bottom: 1px solid var(--border); background: var(--panel); }
+    .top-row { display: flex; gap: .75rem; align-items: end; flex-wrap: wrap; }
+    .world-picker { display: flex; flex-direction: column; gap: .4rem; min-width: 320px; }
     label { font-weight: 600; }
-
-    select {
-      padding: 0.6rem;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      background: #0b0f14;
-      color: var(--text);
+    select, #connect {
+      padding: .6rem; border-radius: 6px; border: 1px solid var(--border);
+      background: #0b0f14; color: var(--text);
     }
-
-    .mud-client__main {
-      flex: 1;
-      padding: 1rem;
-      padding-bottom: 5.5rem;
-    }
-
+    #connect { cursor: pointer; }
+    .mud-client__main { flex: 1; padding: 1rem; padding-bottom: 5.5rem; }
     #terminal {
-      width: 100%;
-      min-height: 50vh;
-      border: 1px solid var(--border);
-      background: #000;
-      border-radius: 8px;
-      padding: 0.8rem;
-      overflow-y: auto;
-      white-space: pre-wrap;
+      width: 100%; min-height: 50vh; border: 1px solid var(--border); background: #000;
+      border-radius: 8px; padding: .8rem; overflow-y: auto; white-space: pre-wrap;
       font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     }
-
     .command-bar {
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: flex;
-      gap: 0.75rem;
-      padding: 0.9rem 1rem;
-      border-top: 1px solid var(--border);
-      background: var(--panel);
-      z-index: 10;
+      position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: .75rem;
+      padding: .9rem 1rem; border-top: 1px solid var(--border); background: var(--panel); z-index: 10;
     }
-
     #command {
-      flex: 1;
-      min-width: 0;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      padding: 0.7rem;
-      background: #0b0f14;
-      color: var(--text);
+      flex: 1; min-width: 0; border-radius: 6px; border: 1px solid var(--border);
+      padding: .7rem; background: #0b0f14; color: var(--text);
     }
-
     #send {
-      border: 1px solid #4e8bc7;
-      background: var(--accent);
-      color: #04111f;
-      border-radius: 6px;
-      padding: 0.7rem 1rem;
-      font-weight: 700;
-      cursor: pointer;
+      border: 1px solid #4e8bc7; background: var(--accent); color: #04111f;
+      border-radius: 6px; padding: .7rem 1rem; font-weight: 700; cursor: pointer;
     }
   </style>
 </head>
 <body>
   <div class="mud-client">
     <header class="mud-client__header">
-      <div class="world-picker">
-        <label for="world">World</label>
-        <select id="world" name="world"></select>
+      <div class="top-row">
+        <div class="world-picker">
+          <label for="world">World</label>
+          <select id="world" name="world"></select>
+        </div>
+        <button id="connect" type="button">Connect</button>
       </div>
     </header>
 
@@ -125,41 +74,109 @@
   </div>
 
   <script>
-    (function mergeWithExistingClient() {
-      const worlds = [
-        { label: 'ACK!TNG', value: 'ackmud.com:8890' },
-        { label: 'ACK!4.3.1', value: 'ackmud.com:8891' },
-        { label: 'ACK!4.2', value: 'ackmud.com:8892' }
-      ];
-
+    (() => {
       const worldSelect = document.getElementById('world');
+      const connectButton = document.getElementById('connect');
       const form = document.getElementById('command-form');
-      const input = document.getElementById('command');
-      const output = document.getElementById('terminal');
+      const commandInput = document.getElementById('command');
+      const terminal = document.getElementById('terminal');
+      let sessionId = null;
+      let pollTimer = null;
 
-      worldSelect.innerHTML = '';
-      for (const world of worlds) {
-        const option = document.createElement('option');
-        option.value = world.value;
-        option.textContent = `${world.label} (${world.value})`;
-        worldSelect.appendChild(option);
+      const append = (text) => {
+        if (!text) return;
+        terminal.textContent += text;
+        terminal.scrollTop = terminal.scrollHeight;
+      };
+
+      const setConnectedUi = (connected) => {
+        connectButton.textContent = connected ? 'Disconnect' : 'Connect';
+        worldSelect.disabled = connected;
+      };
+
+      async function loadWorlds() {
+        const response = await fetch('/api/worlds');
+        const payload = await response.json();
+        worldSelect.innerHTML = '';
+        for (const world of payload.worlds || []) {
+          const option = document.createElement('option');
+          option.value = world.target;
+          option.textContent = `${world.name} (${world.target})`;
+          worldSelect.appendChild(option);
+        }
       }
 
-      // Fallback behavior only. Existing client code can override this submit handling.
-      form.addEventListener('submit', (event) => {
-        if (event.defaultPrevented) return;
-        event.preventDefault();
-
-        const command = input.value.trim();
-        if (!command) return;
-
-        if (output) {
-          output.textContent += `${output.textContent ? '\n' : ''}> ${command}`;
-          output.scrollTop = output.scrollHeight;
+      async function pollOutput() {
+        if (!sessionId) return;
+        try {
+          const response = await fetch('/api/poll', { headers: { 'X-Session-Id': sessionId } });
+          if (!response.ok) throw new Error('poll failed');
+          const payload = await response.json();
+          append(payload.output || '');
+        } catch (_error) {
+          append('\n[Disconnected]\n');
+          sessionId = null;
+          setConnectedUi(false);
+          return;
         }
+        pollTimer = setTimeout(pollOutput, 500);
+      }
 
-        input.value = '';
+      async function connect() {
+        const response = await fetch('/api/connect', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ target: worldSelect.value })
+        });
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.error || 'connect failed');
+        sessionId = payload.sessionId;
+        append(`\n[Connected to ${worldSelect.value}]\n`);
+        setConnectedUi(true);
+        pollOutput();
+      }
+
+      async function disconnect() {
+        if (pollTimer) clearTimeout(pollTimer);
+        pollTimer = null;
+        if (sessionId) {
+          await fetch('/api/disconnect', { method: 'POST', headers: { 'X-Session-Id': sessionId } });
+          append('\n[Disconnected]\n');
+        }
+        sessionId = null;
+        setConnectedUi(false);
+      }
+
+      connectButton.addEventListener('click', async () => {
+        try {
+          if (sessionId) {
+            await disconnect();
+          } else {
+            await connect();
+          }
+        } catch (error) {
+          append(`\n[Error] ${error.message}\n`);
+        }
       });
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const command = commandInput.value.trim();
+        if (!command || !sessionId) return;
+
+        await fetch('/api/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Session-Id': sessionId
+          },
+          body: JSON.stringify({ command })
+        });
+
+        commandInput.value = '';
+      });
+
+      loadWorlds().catch((error) => append(`[Error] ${error.message}\n`));
     })();
   </script>
 </body>
