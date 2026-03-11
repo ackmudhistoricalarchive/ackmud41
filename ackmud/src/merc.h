@@ -727,6 +727,12 @@ struct  descriptor_data
     int                 flags;
     int                 childpid;     /* Child process id */
     time_t		timeout;
+    bool                websocket;
+    unsigned char       ws_rawbuf      [8 * MAX_INPUT_LENGTH];
+    int                 ws_rawlen;
+    unsigned char       ws_frag_opcode;
+    char                ws_fragbuf     [8 * MAX_INPUT_LENGTH];
+    int                 ws_fraglen;
 };
 
 #define DESC_FLAG_PASSTHROUGH 1     /* Used when data is being passed to */
