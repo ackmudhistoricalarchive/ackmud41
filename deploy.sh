@@ -3,7 +3,9 @@ set -euo pipefail
 TARGET="deploy@10.1.0.244"
 SSH="ssh -o StrictHostKeyChecking=no"
 # Build
-cd ackmud/src \&\& make
+cd ackmud/src
+make
+cd -
 # Deploy binary
 scp -o StrictHostKeyChecking=no ackmud/src/merc $TARGET:/opt/mud/src/ackmud/src/merc
 # Restart service
