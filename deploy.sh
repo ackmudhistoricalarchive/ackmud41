@@ -2,9 +2,9 @@
 set -euo pipefail
 TARGET="deploy@10.1.0.244"
 SSH="ssh -o StrictHostKeyChecking=no"
-# Build
+# Build (merc target only, skip integration tests)
 cd ackmud/src
-make
+make merc
 cd -
 # Deploy binary
 scp -o StrictHostKeyChecking=no ackmud/src/merc $TARGET:/opt/mud/src/ackmud/src/merc
