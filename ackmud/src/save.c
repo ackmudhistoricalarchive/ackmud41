@@ -33,14 +33,13 @@
 #include <time.h>
 #include "merc.h"
 #include "hash.h"
+#include <stdlib.h>
 
 #if !defined(macintosh)
 extern  int     _filbuf         args( (FILE *) );
 #endif
 
-#if !defined(macintosh) && !defined(MSDOS)
-void    system          args( ( char *string ) );
-#endif
+/* system() is provided by <stdlib.h> */
 
 /* SAVE_REVISION number defines what has changed:
    0 -> 1:
