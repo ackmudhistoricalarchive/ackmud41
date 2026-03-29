@@ -32,6 +32,7 @@
 #include <string.h>
 #include <time.h>
 #include "merc.h"
+#include <stdlib.h>
 
 extern OBJ_DATA * quest_object;
 extern bool 	quest;
